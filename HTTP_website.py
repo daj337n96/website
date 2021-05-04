@@ -76,8 +76,9 @@ class Client_Handler(BaseHTTPRequestHandler):
             
             self.wfile.write(data_to_client.encode())
             
-    # Handles the newly added task        
+    # Handles clients submissions       
     def do_POST(self):
+        # Handles new task
         if self.path.endswith('/new'):
             ctype, pdict = cgi.parse_header(self.headers['content-type'])
             # String to bytes
@@ -100,6 +101,7 @@ class Client_Handler(BaseHTTPRequestHandler):
             self.send_header('Location', '/Tasklist')
             self.end_headers()
             
+        # Handles removed task
         if self.path.endswith('/remove'):
             listIDpath = self.path.split('/')
             removed_task = listIDpath[2].replace('%20', ' ')
