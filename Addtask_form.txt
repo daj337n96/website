@@ -1,0 +1,20 @@
+<html>
+<head>
+<style>
+#addtask {
+font-size: 150%;
+padding-left: 30px;
+
+}
+</style>
+</head>
+
+<body>
+<form action='/Tasklist/new' method='POST' enctype='multipart/form-data'>
+
+<label for='addtask' id='addtask'>New Task: </label>
+<input name='task' type= 'text' placeholder='Task'>
+<button>Enter</button>
+</form>
+</body>
+</html>

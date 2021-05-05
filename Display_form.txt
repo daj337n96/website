@@ -1,0 +1,5 @@
+<html><body>
+<h1>Welcome to the site!!</h1>
+<h3><a href='/Tasklist'>Tasklist</a></h3>
+<img src="home/pi/Desktop/Website/pic.jpeg" alt="Trulli">
+</body></html>
