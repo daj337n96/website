@@ -13,5 +13,5 @@ The server uses HTTP protocol
 -Port: 8000 or any others
 
 HTTP uses GET/POST depending on the client.
-E.g. GET when asking to display the page
-E.g. POST when sending request to the server
+E.g. GET when asking to display the page.
+E.g. POST when sending request to the server.
