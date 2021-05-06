@@ -1,4 +1,6 @@
-# This website allows the user to enter and remove Tasks to a list 'Tasklist'.
+#Website
+
+This website allows the user to enter and remove Tasks to a list 'Tasklist'.
 
 1. Display_form.html describes the first page of the site.
 2. Addtask_form.html describes the add task option with Enter button.
