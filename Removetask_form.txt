@@ -1,6 +1,0 @@
-<html><body>
-<h2>Remove %s?</h2> %removed_task
-<form action='/Tasklist/%s/remove' method='POST' enctype='multipart/form-data'> %removed_task
-<input type= 'submit' value='Remove'></form>
-<a href='/Tasklist'>Cancel</a>
-</body></html>
