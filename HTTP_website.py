@@ -7,9 +7,9 @@ PORT = 8000
 SERVER_ADDRESS = (SERVER, PORT)
 
 # Response
-Addtask_form = open("Addtask_form.txt").read()
-Display_form = open("Display_form.txt").read()
-Removetask_form = open("Removetask_form.txt").read()
+Addtask_form = open("Addtask_form.html").read()
+Display_form = open("Display_form.html").read()
+Removetask_form = open("Removetask_form.html").read()
 
 # Task
 Tasklist = ['Task 1','Task 2','Task 3']
@@ -91,8 +91,8 @@ class Client_Handler(BaseHTTPRequestHandler):
                 print(fields)
                 # Add the task to Tasklist
                 new_task = fields['task']
-                Tasklist.append(new_task[0])
-                #print(fields)
+                Tasklist.append(str(new_task[0]).strip("'b"))
+                #print(str(new_task[0]).strip("'b"))
             
             # 301 'Moved Permanently' redirect URL to 'Location=/Tasklist'
             # /Tasklist page gets updated
